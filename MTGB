@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="MoneyTreeGangBangers">
+    <meta property="og:type" content="music.musician">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://yoursite.com">
+    <meta property="og:description" content="Official website of hip-hop group MoneyTreeGangBangers from Soweto.">
+    <meta name="author" content="Franklin Mlungwana">
+    <meta name="description" content="The official website of the hip-hop group MoneyTreeGangBangers.">
+    <meta name="keywords" content="MoneyTreeGangBangers,hip hop,rap,Soweto,South Africa">
+    <title>MoneyTreeGangBangers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- COUNT-DOWN BAR -->
+    <div class="countdown flow">
+        <div class="countdown-bar" style="background-color:#222222; color:#fff; text-align:center; padding:10px;">
+            <p><strong>Album Release In</strong>:</p>
+            <div id="countdown-timer">
+                <span id="days">50</span> :
+                <span id="hours">23</span> :
+                <span id="minutes">4</span> :
+                <span id="seconds">58</span>
+                <div data-state="initialised" class="tick-onended-message" style="display:none"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================= -->
+    <!--  HEADER :  social RIGHT  |  logo CENTRE  |  burger LEFT  -->
+    <!-- ========================================================= -->
+    <header role="banner" style="padding:.5rem 0; position:relative;">
+        <!-- 1.  SOCIAL ICONS – TOP-RIGHT -->
+        <div class="header-social" style="position:absolute; top:10px; right:10px;">
+            <ul class="social"
+                style="list-style:none; margin:0; padding:0; display:flex; gap:15px; align-items:center;">
+                <li>
+                    <a href="YOUR_FACEBOOK_URL" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg width="30" height="30" viewBox="0 0 216 216">
+                            <rect width="216" height="216" rx="40" fill="#1877F2" />
+                            <path fill="white"
+                                d="M146 69h-20c-6 0-10 5-10 11v20h30l-4 30h-26v76h-33v-76H63v-30h20V78c0-22 14-38 35-38h28v29z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_TWITTER_URL" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg width="30" height="30" viewBox="0 0 120 120">
+                            <rect width="120" height="120" rx="24" fill="black" />
+                            <path fill="white"
+                                d="M88.9 27.2L63.5 57.1l28.7 35.7H77.9L57.7 68.4 37.5 92.8H28l27.6-34.2L28 27.2h14.3l18.9 24 19.6-24h8.1z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="30" height="30" viewBox="0 0 551 551">
+                            <defs>
+                                <linearGradient id="ig" x1="275" y1="0" x2="275" y2="550">
+                                    <stop offset="0" stop-color="#feda75" />
+                                    <stop offset=".5" stop-color="#d62976" />
+                                    <stop offset="1" stop-color="#4f5bd5" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="551" height="551" rx="120" fill="url(#ig)" />
+                            <circle cx="275" cy="275" r="120" fill="white" />
+                            <circle cx="400" cy="150" r="40" fill="white" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="30" height="30" viewBox="0 0 100 100">
+                            <rect width="100" height="100" rx="20" fill="#FF0000" />
+                            <polygon points="40,30 75,50 40,70" fill="white" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/3RwDIXZkhPeE3FGDUED9HP" target="_blank" rel="noopener"
+                        aria-label="Spotify">
+                        <svg width="30" height="30" viewBox="0 0 168 168">
+                            <circle fill="#1DB954" cx="84" cy="84" r="84" />
+                            <path fill="#FFFFFF"
+                                d="M121.3 113.3c-1.5 0-2.9-.4-4.3-1.1-23.4-13.8-52.5-14.6-77.3-4.4-2.9 1.2-6.2-.2-7.4-3.1-1.2-2.9.2-6.2 3.1-7.4 28.4-11.8 61.5-10.8 88 5.1 2.8 1.7 3.7 5.4 2 8.2-1.1 2-3.2 3.1-5.1 3.1zm10.9-20.9c-1.9 0-3.7-.7-5.2-1.6-27-16-68.2-17.2-95.7-5.2-3.3 1.4-7.1-.2-8.5-3.5-1.4-3.3.2-7.1 3.5-8.5 31.4-13.4 76.6-12 107.7 6.1 3.1 1.8 4.2 5.9 2.3 9-1.2 2.3-3.5 3.7-5.8 3.7zm10.9-22.6c-1.9 0-4-.5-5.7-1.6-32.3-19-86.7-20.8-121.1-6.3-3.7 1.5-7.9-.3-9.4-4-1.5-3.7.3-7.9 4-9.4 38.4-15.8 98.1-13.7 134.6 7.4 3.5 2.1 4.7 6.7 2.6 10.2-1.5 2.5-4 3.7-6.5 3.7z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_TIKTOK_URL" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg width="30" height="30" viewBox="0 0 256 256">
+                            <rect width="256" height="256" rx="40" fill="black" />
+                            <path fill="#69C9D0"
+                                d="M176 96.7c12 8.8 22.7 12 22.7 12v-25.4s-10.8-1.1-22.7-10.9c-12.5-10.3-13.7-21.7-13.7-21.7h-24.6v132.9c0 10.3-8.4 18.7-18.7 18.7s-18.7-8.4-18.7-18.7 8.4-18.7 18.7-18.7c3.3 0 6.4.9 9.2 2.3v-25.5c-3-.4-6.1-.6-9.2-.6-24.4 0-44.2 19.8-44.2 44.2S96.1 198 120.4 198s44.2-19.8 44.2-44.2V96.4s10.4 8 11.4 8.6z" />
+                            <path fill="#EE1D52"
+                                d="M176 96.7c12 8.8 22.7 12 22.7 12v-25.4s-10.8-1.1-22.7-10.9c-12.5-10.3-13.7-21.7-13.7-21.7h-12.4v132.9c0 10.3-8.4 18.7-18.7 18.7-5.4 0-10.4-2.3-13.9-6 3.4 3.8 8.4 6.1 13.9 6.1 10.3 0 18.7-8.4 18.7-18.7V96.4s10.4 8 11.4 8.6z" />
+                            <path fill="white"
+                                d="M162.3 96.4v57.4c0 24.4-19.8 44.2-44.2 44.2S74 178.2 74 153.8s19.8-44.2 44.2-44.2c3.1 0 6.2.2 9.2.6v25.5c-2.8-1.4-5.9-2.3-9.2-2.3-10.3 0-18.7 8.4-18.7 18.7s8.4 18.7 18.7 18.7 18.7-8.4 18.7-18.7V41.4h24.6s1.2 11.4 13.7 21.7c11.9 9.8 22.7 10.9 22.7 10.9v25.4s-10.7-3.2-22.7-12c-1-.6-11.4-8.6-11.4-8.6z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 2.  CENTRED LOGO -->
+        <div class="logo" style="max-width:120px; margin:0 auto;">
+            <img src="logo.png" alt="MoneyTreeGangBangers Logo" style="width:100%; height:auto;">
+        </div>
+
+        <!-- 3.  BURGER BUTTON – TOP-LEFT -->
+        <div class="burger-menu" data-enabled="false" style="position:absolute; top:10px; left:10px;">
+            <button class="burger-button" aria-label="Toggle menu" aria-expanded="false"
+                style="padding:5px; width:40px; height:40px;">
+                <span class="burger-menu_bar" style="height:2px; margin:4px 0;"></span>
+            </button>
+
+            <!-- slide-out nav (social icons removed) -->
+            <div class="burger-menu_panel" style="top:50px; left:0;">
+                <nav role="navigation">
+                    <ul style="font-size:0.9rem;">
+                        <li><a href="news.html" target="_blank" rel="noopener">News</a></li>
+                        <li><a href="about.html" target="_blank" rel="noopener">About</a></li>
+                        <li><a href="https://open.spotify.com/artist/3RwDIXZkhPeE3FGDUED9HP" target="_blank"
+                                rel="noopener">Music</a></li>
+                        <li><a href="tour.html" target="_blank" rel="noopener">Tour</a></li>
+                        <li><a href="story.html" target="_blank" rel="noopener">Our Story</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================  MAIN CONTENT  ================= -->
+    <main>
+        <section>
+            <section class="logo" style="text-align:center; margin-top:20px;">
+                <h1>MoneyTreeGangBangers</h1>
+
+                <figure>
+                    <img src="" alt="MoneyTreeGangBangers Logo">
+                    <figcaption><i>(Official Logo of MoneyTreeGangBangers)</i></figcaption>
+                </figure>
+            </section>
+        </section>
+        <section class="music-section">
+
+            <h2>Latest Releases</h2>
+            <p>Discover the latest music, albums, and exclusive content from MoneyTreeGangBangers.</p>
+            <section class="latest-releases"
+                style="text-align: left ; width: 100% ; max-width: 160px; height: auto; border-radius: 6px ; display: grid; margin: 0 auto; ">
+                <ul class="music-list">
+                    <li>
+                        <a href="https://open.spotify.com/album/71GncrGqy3yU7IAtQuzbkX?si=48G_-hYNT1O1UPgjLrbsKQ"
+                            target="_blank" rel="noopener"><strong>Most Slept On II</strong><img src="" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/album/2WUKWxY7nekMfRMOpArITl?si=x1pJ67H3TECrdUw_ciEp9Q"
+                            target="_blank" rel="noopener"><strong>Nikki</strong><img src="" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/album/3T91YC33M4dJYsWE9tYUvY?si=2DTymkgRSbykBROToGPFmA"
+                            target="_blank" rel="noopener"><strong>BIGG THROAT</strong><img src="" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/album/1CAjurUKi1CfrZk1DjCplb?si=qxHsMjWNQVyavk2gsfaPog"
+                            target="_blank" rel="noopener"><strong>BRITTNEY</strong><img src="" alt=""></a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="about-section">
+            <h2>About MoneyTreeGangBangers</h2>
+            <p>MoneyTreeGangBangers is a dynamic hip-hop group from Soweto, Johannesburg, South Africa. They are
+                widely
+                known for their innovative sound and compelling lyrics. With a growing fanbase, they continue to
+                push
+                the boundaries of different genres.</p>
+            <iframe width="100%" height="300" src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE"
+                style="border:0; border-radius:8px;" loading="lazy"
+                title="Map showing where the group started"></iframe>
+        </section>
+
+        <section>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MtpPxS7ZV6k"
+                title="MoneyTreeGangBangers video" allow="autoplay; clipboard-write; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <section aria-labelledby="listen" class="listen">
+            <h3 id="listen">Listen to MoneyTreeGangBangers</h3>
+            <div class="listen-card flow">
+                <div class="listen-card_image">
+                    <a target="_blank" rel="noopener"
+                        href="https://open.spotify.com/album/1CAjurUKi1CfrZk1DjCplb?si=fZZOKMc4QZaydj9GKrtHJw">
+                        <svg width="40" height="40" viewBox="0 0 168 168" aria-label="Spotify">
+                            <circle fill="#1DB954" cx="84" cy="84" r="84" />
+                            <path fill="#FFFFFF"
+                                d="M121.3 113.3c-1.5 0-2.9-.4-4.3-1.1-23.4-13.8-52.5-14.6-77.3-4.4-2.9 1.2-6.2-.2-7.4-3.1-1.2-2.9.2-6.2 3.1-7.4 28.4-11.8 61.5-10.8 88 5.1 2.8 1.7 3.7 5.4 2 8.2-1.1 2-3.2 3.1-5.1 3.1zm10.9-20.9c-1.9 0-3.7-.7-5.2-1.6-27-16-68.2-17.2-95.7-5.2-3.3 1.4-7.1-.2-8.5-3.5-1.4-3.3.2-7.1 3.5-8.5 31.4-13.4 76.6-12 107.7 6.1 3.1 1.8 4.2 5.9 2.3 9-1.2 2.3-3.5 3.7-5.8 3.7zm10.9-22.6c-1.9 0-4-.5-5.7-1.6-32.3-19-86.7-20.8-121.1-6.3-3.7 1.5-7.9-.3-9.4-4-1.5-3.7.3-7.9 4-9.4 38.4-15.8 98.1-13.7 134.6 7.4 3.5 2.1 4.7 6.7 2.6 10.2-1.5 2.5-4 3.7-6.5 3.7z" />
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="listen-card_title">BRITTNEY</h4>
+                <small class="listen-card_artist">Album</small>
+                <a target="_blank" rel="noopener"
+                    href="https://open.spotify.com/album/1CAjurUKi1CfrZk1DjCplb?si=fZZOKMc4QZaydj9GKrtHJw"
+                    class="btn btn-small">
+                    <span>Listen on Spotify</span>
+                </a>
+            </div>
+
+            <div class="subscribe"
+                style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('background.jpg'); background-size:cover;">
+                <div class="holder flow">
+                    <h3 class="has-medium-font-size">Subscribe to our Newsletter</h3>
+                    <p>Stay updated with the latest news and releases from MoneyTreeGangBangers.</p>
+                    <form action="/subscribe" method="post" class="subscribe-form flow">
+                        <label for="email" class="visually-hidden">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required
+                            autocomplete="email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================  FOOTER  ================= -->
+    <footer>
+        <div class="footer-links">
+            <ul class="social"
+                style="list-style:none; padding:0; margin:0; display:flex; gap:15px; justify-content:center;">
+                <li>
+                    <a href="https://open.spotify.com/artist/3RwDIXZkhPeE3FGDUED9HP" target="_blank" rel="noopener"
+                        aria-label="Spotify">
+                        <svg width="30" height="30" viewBox="0 0 168 168">
+                            <circle fill="#1DB954" cx="84" cy="84" r="84" />
+                            <path fill="#FFFFFF"
+                                d="M121.3 113.3c-1.5 0-2.9-.4-4.3-1.1-23.4-13.8-52.5-14.6-77.3-4.4-2.9 1.2-6.2-.2-7.4-3.1-1.2-2.9.2-6.2 3.1-7.4 28.4-11.8 61.5-10.8 88 5.1 2.8 1.7 3.7 5.4 2 8.2-1.1 2-3.2 3.1-5.1 3.1zm10.9-20.9c-1.9 0-3.7-.7-5.2-1.6-27-16-68.2-17.2-95.7-5.2-3.3 1.4-7.1-.2-8.5-3.5-1.4-3.3.2-7.1 3.5-8.5 31.4-13.4 76.6-12 107.7 6.1 3.1 1.8 4.2 5.9 2.3 9-1.2 2.3-3.5 3.7-5.8 3.7zm10.9-22.6c-1.9 0-4-.5-5.7-1.6-32.3-19-86.7-20.8-121.1-6.3-3.7 1.5-7.9-.3-9.4-4-1.5-3.7.3-7.9 4-9.4 38.4-15.8 98.1-13.7 134.6 7.4 3.5 2.1 4.7 6.7 2.6 10.2-1.5 2.5-4 3.7-6.5 3.7z" />
+                        </svg>
+                        <span>Spotify</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_TWITTER_URL" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg width="30" height="30" viewBox="0 0 120 120">
+                            <rect width="120" height="120" rx="24" fill="black" />
+                            <path fill="white"
+                                d="M88.9 27.2L63.5 57.1l28.7 35.7H77.9L57.7 68.4 37.5 92.8H28l27.6-34.2L28 27.2h14.3l18.9 24 19.6-24h8.1z" />
+                        </svg>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="30" height="30" viewBox="0 0 551 551">
+                            <defs>
+                                <linearGradient id="igf" x1="275" y1="0" x2="275" y2="550">
+                                    <stop offset="0" stop-color="#feda75" />
+                                    <stop offset=".5" stop-color="#d62976" />
+                                    <stop offset="1" stop-color="#4f5bd5" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="551" height="551" rx="120" fill="url(#igf)" />
+                            <circle cx="275" cy="275" r="120" fill="white" />
+                            <circle cx="400" cy="150" r="40" fill="white" />
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_FACEBOOK_URL" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg width="30" height="30" viewBox="0 0 216 216">
+                            <rect width="216" height="216" rx="40" fill="#1877F2" />
+                            <path fill="white"
+                                d="M146 69h-20c-6 0-10 5-10 11v20h30l-4 30h-26v76h-33v-76H63v-30h20V78c0-22 14-38 35-38h28v29z" />
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="30" height="30" viewBox="0 0 100 100">
+                            <rect width="100" height="100" rx="20" fill="#FF0000" />
+                            <polygon points="40,30 75,50 40,70" fill="white" />
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="YOUR_TIKTOK_URL" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg width="30" height="30" viewBox="0 0 256 256">
+                            <rect width="256" height="256" rx="40" fill="black" />
+                            <path fill="#69C9D0"
+                                d="M176 96.7c12 8.8 22.7 12 22.7 12v-25.4s-10.8-1.1-22.7-10.9c-12.5-10.3-13.7-21.7-13.7-21.7h-24.6v132.9c0 10.3-8.4 18.7-18.7 18.7s-18.7-8.4-18.7-18.7 8.4-18.7 18.7-18.7c3.3 0 6.4.9 9.2 2.3v-25.5c-3-.4-6.1-.6-9.2-.6-24.4 0-44.2 19.8-44.2 44.2S96.1 198 120.4 198s44.2-19.8 44.2-44.2V96.4s10.4 8 11.4 8.6z" />
+                            <path fill="#EE1D52"
+                                d="M176 96.7c12 8.8 22.7 12 22.7 12v-25.4s-10.8-1.1-22.7-10.9c-12.5-10.3-13.7-21.7-13.7-21.7h-12.4v132.9c0 10.3-8.4 18.7-18.7 18.7-5.4 0-10.4-2.3-13.9-6 3.4 3.8 8.4 6.1 13.9 6.1 10.3 0 18.7-8.4 18.7-18.7V96.4s10.4 8 11.4 8.6z" />
+                            <path fill="white"
+                                d="M162.3 96.4v57.4c0 24.4-19.8 44.2-44.2 44.2S74 178.2 74 153.8s19.8-44.2 44.2-44.2c3.1 0 6.2.2 9.2.6v25.5c-2.8-1.4-5.9-2.3-9.2-2.3-10.3 0-18.7 8.4-18.7 18.7s8.4 18.7 18.7 18.7 18.7-8.4 18.7-18.7V41.4h24.6s1.2 11.4 13.7 21.7c11.9 9.8 22.7 10.9 22.7 10.9v25.4s-10.7-3.2-22.7-12c-1-.6-11.4-8.6-11.4-8.6z" />
+                        </svg>
+                        <span>TikTok</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy; 2024 MoneyTreeGangBangers Records</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
