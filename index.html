@@ -132,6 +132,15 @@
                 </nav>
             </div>
         </div>
+        <script>
+  const btn   = document.querySelector('.burger-button');
+  const outer = document.querySelector('.burger-menu');   // the element with data-enabled
+  btn.addEventListener('click', () => {
+    const open = outer.dataset.enabled !== 'true';        // flip boolean
+    outer.dataset.enabled = open;                         // CSS picks this up
+    btn.setAttribute('aria-expanded', open);              // a11y
+  });
+</script>
     </header>
 
     <!-- =================  MAIN CONTENT  ================= -->
@@ -342,6 +351,7 @@
 
 
 </html>
+
 
 
 
