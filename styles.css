@@ -1,16 +1,21 @@
-/* styles.css
-   Clean, responsive stylesheet for MoneyTreeGangBangers site
-   Drop into the repo as styles.css
-*/
+/* ========================
+   MONEYTREEGANGBANGERS CSS
+   Complete, responsive, retro/indie style
+   ======================== */
 
 /* ------------------------
-   Variables & Reset
+   GOOGLE FONTS
    ------------------------ */
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Rock+Salt&display=swap');
+
+/* ------------------------
+   VARIABLES & RESET
+   ------------------------ */
+:root {
   --bg: #0f0f0f;
   --card: #111;
   --muted: #9aa0a6;
-  --accent: #1DB954; /* spotify green accent */
+  --accent: #1DB954;
   --accent-2: #ff0040;
   --glass: rgba(255,255,255,0.04);
   --radius: 12px;
@@ -20,319 +25,220 @@
   --accent-gradient: linear-gradient(135deg,#feda75 0%,#d62976 50%,#4f5bd5 100%);
   --text: #e9eef1;
   --transition: 200ms ease;
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 *,
 *::before,
-*::after{box-sizing:border-box;margin:0;padding:0}
+*::after { box-sizing: border-box; margin:0; padding:0; }
 
-html,body{height:100%}
-body{
+html, body { height:100%; }
+body {
   background: linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
-  color:var(--text);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.45;
-  font-size:16px;
-  padding:0 1rem;
+  color: var(--text);
+  font-family: 'Rock Salt', cursive;
+  line-height: 1.45;
+  font-size: 16px;
+  padding: 0 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container */
-main{
+/* ------------------------
+   CONTAINER
+   ------------------------ */
+main {
   max-width: var(--max-width);
   margin: 1.2rem auto 3rem;
   width: 100%;
   padding: 0 1rem;
 }
 
-/* Utility */
-.flow > * + *{margin-top:1rem}
-.visually-hidden{
-  position:absolute !important;
-  height:1px;width:1px;overflow:hidden;
-  clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px;
-}
-
-/* ------------------------
-   COUNTDOWN BAR
-   ------------------------ */
-.countdown{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  gap:1rem;
-  margin: 0 auto;
-}
-
-.countdown-bar{
-  width:100%;
-  max-width:var(--max-width);
-  border-radius:8px;
-  background:#222;
-  color:var(--text);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:.6rem 1rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-  font-weight:600;
-}
-
-#countdown-timer{
-  display:flex;
-  gap:.6rem;
-  align-items:center;
-  font-variant-numeric:tabular-nums;
-}
-
-#countdown-timer span{
-  background:var(--glass);
-  padding:.25rem .55rem;
-  border-radius:6px;
-  min-width:38px;
-  text-align:center;
-  font-weight:700;
-}
-
-/* ------------------------
-   HEADER
-   ------------------------ */
-header{
-  max-width:var(--max-width);
-  margin: 1rem auto 0;
-  display:block;
-  position:relative;
-  z-index:50;
-}
-
-/* logo centre — we keep the inline centering but reinforce */
-.logo{display:flex;justify-content:center;align-items:center}
-.logo img{display:block; max-width:120px;height:auto;border-radius:8px}
-
-/* Social icons (top-right) */
-.header-social .social{
-  display:flex;
-  gap:.8rem;
-  align-items:center;
-}
-.header-social .social a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  transition:transform var(--transition), opacity var(--transition);
-}
-.header-social .social a:hover{transform:translateY(-3px); opacity:.95}
-
-/* Burger */
-.burger-menu .burger-button{
-  display:inline-grid;
-  place-items:center;
-  background:transparent;
-  border:1px solid rgba(255,255,255,0.06);
-  border-radius:8px;
-  cursor:pointer;
-}
-.burger-menu .burger-menu_bar{
-  display:block;
-  width:20px;
-  height:2px;
-  background:var(--text);
-  border-radius:1px;
-  transition: transform 180ms ease;
-}
-
-/* slide-out panel */
-.burger-menu_panel{
-  position:absolute;
-  left:0;
-  top:50px;
-  background:rgba(12,12,12,0.96);
-  padding: .8rem;
-  border-radius:8px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
-  display:none; /* toggled by data-enabled attr */
-  min-width:180px;
-}
-.burger-menu[data-enabled="true"] .burger-menu_panel{
-  display:block;
-}
-.burger-menu_panel nav ul{list-style:none}
-.burger-menu_panel nav a{
-  color:var(--text);
-  padding:.45rem 0;
-  display:block;
-  text-decoration:none;
-  border-bottom:1px dashed rgba(255,255,255,0.03);
-}
-.burger-menu_panel nav a:hover{color:var(--accent);}
-
 /* ------------------------
    TYPOGRAPHY
    ------------------------ */
-h1,h2,h3,h4{color:var(--text); margin:0}
-h1{font-size:clamp(1.6rem, 3.2vw, 2.6rem)}
-h2{font-size:1.25rem}
-h3{font-size:1.1rem}
-h4{font-size:1rem}
+h1, h2 { font-family: 'Lobster', cursive; color: var(--text); margin:0; }
+h1 { font-size: clamp(1.6rem, 3.2vw, 2.6rem); }
+h2 { font-size: 1.25rem; }
+h3, h4, .subtitle { font-family: 'Pacifico', cursive; color: var(--text); }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
+
+/* Smiley heading example */
+h2.smiley-heading::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="%23FFD93B"/><circle cx="20" cy="24" r="4" fill="%233E4347"/><circle cx="44" cy="24" r="4" fill="%233E4347"/><path d="M20 44C24 48 40 48 44 44" stroke="%233E4347" stroke-width="3" stroke-linecap="round"/></svg>');
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ------------------------
+   BUTTONS
+   ------------------------ */
+.btn, .btn-small, button {
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #022;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.btn:hover, .btn-small:hover, button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.btn.btn-small { font-size: 0.9rem; padding: 0.4rem 0.7rem; }
+
+/* ------------------------
+   CHECKBOXES (services)
+   ------------------------ */
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Rock Salt', cursive;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+/* ------------------------
+   DATE/TIME INPUTS
+   ------------------------ */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"] {
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  color: var(--text);
+  font-family: 'Rock Salt', cursive;
+  outline: none;
+  min-width: 150px;
+}
+input:focus { box-shadow: 0 6px 18px rgba(0,0,0,0.6); border-color: rgba(255,255,255,0.12); }
 
 /* ------------------------
    MUSIC SECTION / LIST
    ------------------------ */
-.music-section{
+.music-section {
   margin-top:1rem;
   text-align:center;
 }
-.music-section .latest-releases{
-  margin-top: .75rem;
+.music-section .latest-releases {
+  margin-top:0.75rem;
   display:grid;
-  gap:.6rem;
+  gap:0.6rem;
   justify-items:center;
 }
-.music-list{list-style:none; padding:0; margin:0; width:100%}
-.music-list li{
+.music-list { list-style:none; padding:0; margin:0; width:100%; }
+.music-list li {
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  padding:.6rem;
+  padding:0.6rem;
   border-radius:8px;
-  margin:.45rem 0;
+  margin:0.45rem 0;
   text-align:left;
   width:100%;
   max-width:380px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.5);
 }
-.music-list a{
-  color:var(--text);
+.music-list a {
+  color: var(--text);
   text-decoration:none;
   display:flex;
   align-items:center;
-  gap:.6rem;
+  gap:0.6rem;
+  font-family: 'Rock Salt', cursive;
 }
-.music-list a img{width:48px;height:48px;object-fit:cover;border-radius:6px;opacity:.98}
-.music-list a strong{display:block}
-
-/* ------------------------
-   ABOUT / FRAMES
-   ------------------------ */
-.about-section{margin:1.25rem 0}
-.about-section p{max-width:760px;margin: .5rem auto;color:var(--muted)}
-
-/* iframe responsive helper */
-iframe{border:0;border-radius:8px;box-shadow: 0 10px 30px rgba(0,0,0,0.6)}
+.music-list a img { width:48px; height:48px; object-fit:cover; border-radius:6px; opacity:0.98; }
+.music-list a strong { display:block; font-family: 'Lobster', cursive; }
 
 /* ------------------------
    LISTEN CARD
    ------------------------ */
-.listen{margin-top:1.2rem}
-.listen-card{
+.listen-card {
   display:flex;
   gap:1rem;
   align-items:center;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  padding:.8rem;
+  padding:0.8rem;
   border-radius:12px;
   max-width:720px;
   margin:0.8rem auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
-.listen-card_image{width:64px;height:64px;flex:0 0 64px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#0a0a0a}
-.listen-card_title{font-weight:700}
-.listen-card_artist{color:var(--muted);display:block;font-size:.85rem}
-
-/* Button styles */
-.btn{
-  display:inline-flex;
-  align-items:center;
-  gap:.5rem;
-  background:var(--accent);
-  color:#022;
-  padding:.45rem .85rem;
+.listen-card_image {
+  width:64px;
+  height:64px;
+  flex:0 0 64px;
   border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
-  border:none;
-  cursor:pointer;
-  transition:transform var(--transition), box-shadow var(--transition);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#0a0a0a;
 }
-.btn:hover{transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.45)}
-.btn.btn-small{font-size:.9rem;padding:.4rem .7rem}
+.listen-card_title { font-weight:700; font-family: 'Lobster', cursive; }
+.listen-card_artist { color: var(--muted); display:block; font-size:0.85rem; font-family: 'Rock Salt', cursive; }
 
 /* ------------------------
    SUBSCRIBE SECTION
    ------------------------ */
-.subscribe{
-  margin-top:1rem;
-  border-radius:12px;
-  overflow:hidden;
-  color:var(--text);
-  padding:1rem;
-  background-size:cover;
-  position:relative;
-}
-.subscribe .holder{
-  max-width:900px;
-  margin:0 auto;
-  padding:1rem;
-  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
-  border-radius:10px;
-}
-.subscribe-form{
-  display:flex;
-  gap:.6rem;
-  align-items:center;
-  margin-top:.6rem;
-  flex-wrap:wrap;
-}
-.subscribe-form input[type="email"]{
-  padding:.6rem .8rem;
-  border-radius:8px;
-  border:1px solid rgba(255,255,255,0.06);
-  background:rgba(255,255,255,0.02);
-  color:var(--text);
-  min-width:220px;
-  outline:none;
-}
-.subscribe-form input:focus{box-shadow:0 6px 18px rgba(0,0,0,0.6); border-color:rgba(255,255,255,0.12)}
+.subscribe { margin-top:1rem; border-radius:12px; overflow:hidden; color: var(--text); padding:1rem; background-size:cover; position:relative; }
+.subscribe .holder { max-width:900px; margin:0 auto; padding:1rem; background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)); border-radius:10px; }
+.subscribe-form { display:flex; gap:0.6rem; align-items:center; margin-top:0.6rem; flex-wrap:wrap; }
+.subscribe-form input[type="email"] { padding:0.6rem 0.8rem; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); color: var(--text); min-width:220px; outline:none; font-family: 'Rock Salt', cursive; }
+.subscribe-form input:focus { box-shadow:0 6px 18px rgba(0,0,0,0.6); border-color: rgba(255,255,255,0.12); }
 
 /* ------------------------
    FOOTER
    ------------------------ */
-footer{
+footer {
   margin-top:1.8rem;
   padding:1.2rem 0 2.4rem;
   text-align:center;
-  color:var(--muted);
+  color: var(--muted);
 }
-.footer-links{margin-bottom:1rem}
-.footer-links .social{display:flex;gap:1rem;justify-content:center;align-items:center}
-.footer-links a{color:var(--muted);text-decoration:none;display:inline-flex;gap:.5rem;align-items:center}
-.footer-links a span{font-size:.95rem}
-footer p{font-size:.9rem;margin-top:.6rem;color:var(--muted)}
+.footer-links { margin-bottom:1rem; }
+.footer-links .social { display:flex; gap:1rem; justify-content:center; align-items:center; }
+.footer-links a { color: var(--muted); text-decoration:none; display:inline-flex; gap:0.5rem; align-items:center; }
+.footer-links a span { font-size:0.95rem; }
 
 /* ------------------------
-   Accessibility & small tweaks
+   UTILITY
    ------------------------ */
-a:focus{outline:3px solid rgba(29,185,84,0.12); outline-offset:3px}
-svg{display:block}
-img{display:block;max-width:100%}
+.flow > * + * { margin-top:1rem; }
+.visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; border:0; padding:0; margin:-1px; }
+a:focus { outline:3px solid rgba(29,185,84,0.12); outline-offset:3px; }
+img, svg { display:block; max-width:100%; }
 
 /* ------------------------
    RESPONSIVE
    ------------------------ */
-@media (min-width:720px){
-  .music-section .latest-releases{
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap:1rem;
-  }
-  .listen-card{padding:1rem}
-  .subscribe-form{justify-content:flex-start}
+@media (min-width:720px) {
+  .music-section .latest-releases { grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
+  .listen-card { padding:1rem; }
+  .subscribe-form { justify-content:flex-start; }
+}
+@media (min-width:980px) {
+  header { display:flex; align-items:center; justify-content:center; padding:1rem 0; }
+  .header-social { position:absolute; right:18px; top:10px; }
+  .burger-menu { position:absolute; left:18px; top:10px; }
+  .logo { margin:0; }
+  main { padding:0; }
 }
 
-@media (min-width:980px){
-  header{display:flex;align-items:center;justify-content:center; padding:1rem 0}
-  /* position header social & burger positioned absolute in your HTML; ensure they sit on top */
-  .header-social{position:absolute; right:18px; top:10px}
-  .burger-menu{position:absolute; left:18px; top:10px}
-  .logo{margin:0}
-  main{padding:0}
-}
