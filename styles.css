@@ -201,6 +201,30 @@ input:focus { box-shadow: 0 6px 18px rgba(0,0,0,0.6); border-color: rgba(255,255
 .listen-card_title { font-weight:700; font-family: 'Lobster', cursive; }
 .listen-card_artist { color: var(--muted); display:block; font-size:0.85rem; font-family: 'Rock Salt', cursive; }
 
+.snippets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.snippets iframe {
+    width: 300px;
+    height: 170px;
+}
+
+/* Make sure the <a> wrapping the first video doesn't break the layout */
+.snippets a {
+    display: block;
+}
+
+/* Headings: keep them above the correct video */
+.snippets h3, 
+.snippets h4 {
+    width: 100%;
+    margin: 0.5rem 0 0.3rem;
+}
+
+
 /* ------------------------
    SUBSCRIBE SECTION
    ------------------------ */
