@@ -310,6 +310,48 @@ figure figcaption {
     margin: 0.5rem 0;
 }
 
+#tour {
+    padding: 2rem 1rem;
+    background: #111;
+    border-radius: 12px;
+    color: #fff;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#tour h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#tour ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tour li {
+    background: #1a1a1a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-left: 5px solid #1DB954; /* accent stripe */
+}
+
+#tour time {
+    font-weight: bold;
+    color: #1DB954;
+}
+
+#tour address {
+    font-style: normal;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+    color: #cfcfcf;
+    line-height: 1.3;
+}
 
 
 
