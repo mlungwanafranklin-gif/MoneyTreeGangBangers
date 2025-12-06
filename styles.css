@@ -257,6 +257,37 @@ figure figcaption {
     color: #555;
 }
 
+.snippets {
+    display: flex;            /* enables flex layout */
+    flex-wrap: wrap;          /* wraps videos to next line on smaller screens */
+    gap: 1rem;                /* space between videos */
+    justify-content: center;  /* centers the row */
+    align-items: flex-start;  /* aligns videos at top */
+}
+
+/* Make each video a consistent size */
+.snippets iframe {
+    width: 300px;   /* adjust as needed */
+    height: 170px;  /* adjust height to keep aspect ratio */
+    border: none;   /* remove default border if any */
+}
+
+/* Optional: responsive for small screens */
+@media (max-width: 800px) {
+    .snippets iframe {
+        width: 90%;   /* takes most of the screen on mobile */
+        height: auto; /* maintains aspect ratio */
+    }
+}
+
+/* Optional: spacing for headings */
+.snippets h3, .snippets h4 {
+    width: 100%;      /* headings take full width */
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+
 
 
 
