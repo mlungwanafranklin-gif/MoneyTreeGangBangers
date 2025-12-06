@@ -223,6 +223,41 @@ input:focus { box-shadow: 0 6px 18px rgba(0,0,0,0.6); border-color: rgba(255,255
   padding: 1rem;
 }
 
+/* Target the logo image inside the figure */
+figure img {
+    display: block;
+    margin: 0 auto;              /* center the image */
+    width: 50%;                  /* responsive width */
+    max-width: 400px;            /* optional max width */
+    aspect-ratio: 3 / 2;         /* keeps oval proportions on desktop */
+    object-fit: cover;           /* fills the shape nicely */
+    border-radius: 50% / 50%;    /* creates the oval */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* subtle shadow */
+    transition: transform 0.3s ease, border-radius 0.3s ease; /* smooth hover & shape change */
+}
+
+/* Optional hover effect */
+figure img:hover {
+    transform: scale(1.05);      /* enlarges slightly on hover */
+}
+
+/* Make it a circle on smaller screens */
+@media (max-width: 600px) {
+    figure img {
+        aspect-ratio: 1 / 1;     /* square aspect ratio for a circle */
+        border-radius: 50%;       /* perfect circle */
+    }
+}
+
+/* Optional figcaption styling */
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+
 
 
 /* ------------------------
