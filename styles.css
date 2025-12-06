@@ -43,6 +43,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#flashWord {
+  transition: color 0.4s ease;
+}
+
+
 /* ------------------------
    CONTAINER
    ------------------------ */
