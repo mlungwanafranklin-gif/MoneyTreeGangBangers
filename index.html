@@ -146,22 +146,20 @@
     <main>
         <section>
             <section class="logo" style="text-align:center; margin-top:20px;">
-  <h1><span class="flashWord">Money</span>Tree<span class="flashWord">Gang</span>Bangers</h1>
+<span class="flashWord">Money</span>Tree<span class="flashWord">Gang</span>Bangers
 
-                <script>
-  const word = document.getElementById("flashWord");
-
-  // pick whatever colors you want
+<script>
+  const words = document.querySelectorAll(".flashWord"); // get all elements with class
   const colors = ["#ff4444", "#1DB954", "#00aaff", "#ffbb00", "#ff00cc"];
-
   let i = 0;
 
   setInterval(() => {
-    word.style.color = colors[i];
+    words.forEach(word => {
+      word.style.color = colors[i];
+    });
     i = (i + 1) % colors.length;
   }, 3000);
 </script>
-
 
   <figure style="margin:0;">   <!-- remove browser default margin -->
     <img src="MoneyTreeGangBangers/WhatsApp Image 2025-12-06 at 19.16.51_eba429fa.jpg"
@@ -401,6 +399,7 @@
 
 
 </html>
+
 
 
 
