@@ -156,7 +156,7 @@ input:focus { box-shadow: 0 6px 18px rgba(0,0,0,0.6); border-color: rgba(255,255
 .music-list li {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   padding: 0.6rem;
-  border-radius: 8px;
+  border-radius: 11px;
   text-align: left;
   width: calc(25% - 1rem);    /* 4 items per row */
   max-width: 220px;
